@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap</title>
+        <!--Css only-->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark navbar-expand">
+            <div class="container">
+              <a class="navbar-brand" href="#">Start Bootstrap</a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Services</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        
+        <header id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="banner bg-dark py-5 d-flex flex-column align-items-center">
+                <div class="text-white text-center w-50 mb-2">
+                    <h1>Presente your business in a whole new way</h1>
+                    <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus dolore sint harum quibusdam voluptatum quia dolorum in adipisci</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-outline-light">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="banner bg-dark py-5 d-flex flex-column align-items-center">
+                <div class="text-white text-center w-50 mb-2">
+                    <h1> Dolor sit amet consectetur adipisicing elit</h1>
+                    <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus dolore sint harum quibusdam voluptatum quia dolorum in adipisci</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-outline-light">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="banner bg-dark py-5 d-flex flex-column align-items-center">
+                <div class="text-white text-center w-50 mb-2">
+                    <h1>Business in a whole new way</h1>
+                    <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus dolore sint harum quibusdam voluptatum quia dolorum in adipisci</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-outline-light">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </header>
+        <main class="container-fluid p-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card py-4 px-2">
+                        <div class="card-body">
+                          <h3 class="card-title small text-muted"><b>FREE</b></h3>
+                          <p class="card-text">
+                            <span class="display-3"><strong>$0</strong></span><span class="text-muted">/mo.</span>
+                          </p>
+                          <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check"></i> <strong>1 user</strong></li>
+                            <li class="mb-2"><i class="bi bi-check"></i> 5GB storage</li>
+                            <li class="mb-2"> <i class="bi bi-check"></i> Unlimited public projects</li>
+                            <li class="mb-2"><i class="bi bi-check"></i> Community access</li>
+                            <li class="mb-2 text-muted"><i class="bi bi-x"></i> Unlimited private projects</li>
+                            <li class="mb-2 text-muted"><i class="bi bi-x"></i> Dedicated support</li>
+                            <li class="mb-2 text-muted"><i class="bi bi-x"></i> Free linked domin</li>
+                            <li class="mb-2 text-muted"><i class="bi bi-x"></i> Monthly status reports</li>
+                          </ul><!--Use o CDN nos Icons-->
+                          <a href="#" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Chose plan</a>
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <form action="mailto:to=teste.t@gmail.com">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Payment details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="mb-2 row">
+                                        <label for="holder_name" class="form-label col-4">Holder</label>
+                                        <input name="holder_name" type="text" class="form-control col">
+                                      </div>
+                                      <div class="mb-2 row">
+                                        <label for="card-number" class="form-label col-4">Card number</label>
+                                        <input name="card-number" type="text" class="form-control col">
+                                      </div>
+                                      <div class="mb-2 row">
+                                        <label for="expiration-date" class="form-label col-4">Expiration ate</label>
+                                        <input name="expiration-date" type="text" class="form-control col">
+                                      </div>
+                                      <div class="mb-2 row">
+                                        <label for="cvv" class="form-label col-4">CVV</label>
+                                        <input name="cvv" type="text" class="form-control col">
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                  
+                </div>
+                <div class="col-4">
+                  <div class="card py-4 px-2">
+                      <div class="card-body">
+                        <h3 class="card-title small text-muted"><i class="bi bi-star-fill" style="color:orange"></i><b> PRO</b></h3>
+                        <p class="card-text">
+                          <span class="display-3"><strong>$9</strong></span><span class="text-muted">/mo.</span>
+                        </p>
+                        <ul class="list-unstyled">
+                          <li class="mb-2"><i class="bi bi-check"></i> <strong>5 user</strong></li>
+                          <li class="mb-2"><i class="bi bi-check"></i> 5GB storage</li>
+                          <li class="mb-2"> <i class="bi bi-check"></i> Unlimited public projects</li>
+                          <li class="mb-2"><i class="bi bi-check"></i> Community access</li>
+                          <li class="mb-2"><i class="bi bi-check"></i> Unlimited private projects</li>
+                          <li class="mb-2"><i class="bi bi-check"></i> Dedicated support</li>
+                          <li class="mb-2"><i class="bi bi-check"></i> Free linked domin</li>
+                          <li class="mb-2 text-muted"><i class="bi bi-x"></i> Monthly status reports</li>
+                        </ul><!--Use o CDN nos Icons-->
+                        <a href="#" id="click_bnt_test" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Chose plan</a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <form action="mailto:to=teste.t@gmail.com">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Payment details</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-2 row">
+                                      <label for="holder_name" class="form-label col-4">Holder</label>
+                                      <input name="holder_name" type="text" class="form-control col">
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="card-number" class="form-label col-4">Card number</label>
+                                      <input name="card-number" type="text" class="form-control col">
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="expiration-date" class="form-label col-4">Expiration ate</label>
+                                      <input name="expiration-date" type="text" class="form-control col">
+                                    </div>
+                                    <div class="mb-2 row">
+                                      <label for="cvv" class="form-label col-4">CVV</label>
+                                      <input name="cvv" type="text" class="form-control col">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+              </div>
+              <div class="col-4">
+                <div class="card py-4 px-2">
+                    <div class="card-body">
+                      <h3 class="card-title small text-muted"><b>ENTERPRISE</b></h3>
+                      <p class="card-text">
+                        <span class="display-3"><strong>$49</strong></span><span class="text-muted">/mo.</span>
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check"></i> <strong>Unlimited user</strong></li>
+                        <li class="mb-2"><i class="bi bi-check"></i> 5GB storage</li>
+                        <li class="mb-2"> <i class="bi bi-check"></i> Unlimited public projects</li>
+                        <li class="mb-2"><i class="bi bi-check"></i> Community access</li>
+                        <li class="mb-2"><i class="bi bi-check"></i> Unlimited private projects</li>
+                        <li class="mb-2"><i class="bi bi-check"></i> Dedicated support</li>
+                        <li class="mb-2"><i class="bi bi-check"></i> <strong>Unlimited</strong> linked domin</li>
+                        <li class="mb-2"><i class="bi bi-check"></i> Monthly status reports</li>
+                      </ul><!--Use o CDN nos Icons-->
+                      <a href="#" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Chose plan</a>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <form action="mailto:to=teste.t@gmail.com">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Payment details</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="mb-2 row">
+                                    <label for="holder_name" class="form-label col-4">Holder</label>
+                                    <input name="holder_name" type="text" class="form-control col">
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="card-number" class="form-label col-4">Card number</label>
+                                    <input name="card-number" type="text" class="form-control col">
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="expiration-date" class="form-label col-4">Expiration ate</label>
+                                    <input name="expiration-date" type="text" class="form-control col">
+                                  </div>
+                                  <div class="mb-2 row">
+                                    <label for="cvv" class="form-label col-4">CVV</label>
+                                    <input name="cvv" type="text" class="form-control col">
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+            </div>
+            
+        </div>
+        </main>
+    </body>
+    <!--JavaScript Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
